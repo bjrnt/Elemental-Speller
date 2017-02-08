@@ -1,0 +1,8 @@
+[package]
+name = "elemental-speller"
+version = "1.0.0"
+authors = ["Björn Tegelund <bjorn@tumblbug.com>"]
+
+[dependencies]
+csv = "0.14"
+itertools = "0.5.9"
