@@ -89,7 +89,7 @@ impl<'a> fmt::Display for Spelling<'a> {
         write!(f, " (")?;
 
         for elem in self.0.iter().map(|e| e.name.as_str()).intersperse(", ") {
-            write!(f, "{}", elem)?;
+            write!(f, "{}", elem.to_lowercase())?;
         }
 
         write!(f, ")")
